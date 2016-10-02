@@ -272,8 +272,8 @@ public class CarDetector2 {
           try {
 
             print = new PrintWriter("gilman1.txt", "UTF-8");
-            print.println(count);
             print.println(PARKING_SPOTS - count);
+            print.println(count);
             print.close();
           }
 
@@ -346,8 +346,8 @@ public class CarDetector2 {
           try {
 
             print = new PrintWriter("gilman1.txt", "UTF-8");
-            print.println(count);
             print.println(PARKING_SPOTS - count);
+            print.println(count);
             print.close();
           }
 
