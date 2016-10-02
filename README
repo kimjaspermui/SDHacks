@@ -1,0 +1,22 @@
+this program keeps track of the number of empty spaces available 
+inside of a parking structure by use of a camera installed at the 
+entrance of the parking structure. The camera takes note of when a vehicle 
+either enters from the bottom side of the camera which denotes the entrance
+(or a car entering the structure) or from the top half of the camera which 
+denotes a car leaving the structure. The program will know how many parking 
+spots are available in an empty structure and from there whenever a car enters
+the number of spots available will decrease by one and vice versa for a leaving
+car. The number of available spots is uploaded to a GUI that will show the 
+number of spots available in a certain floor.(but it only works for floor 1
+*work in progress)
+
+three terminals are used in the process of running this application each one 
+requires 1 step which are as follows
+1. enable the camera by running the unix script "camera.sh" by typing 
+   ./camera.sh which will produce an image named "test.jpg" 
+2. run the software that detects the car entering or leaving the structure by 
+   typing "java CarDetection2" in a seperate terminal which will produce a 
+   txt file containing the information used by the GUI application, the file is 
+   named "gilman1.txt"
+3. run the GUI by typing "make" in the third terminal which will use the 
+   information stored in "gilman1.txt" and translate it to the program.
